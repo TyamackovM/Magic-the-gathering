@@ -1,10 +1,20 @@
 const cardsContainer = document.querySelector('.cardsContainer');
-console.log(cardsContainer);
-console.log('етэ')
 
-cardsContainer.addEventListener('click', (event) => {
+cardsContainer.addEventListener('click', async (event) => {
   event.preventDefault();
   if (event.target.tagName === 'BUTTON') {
-    console.log(123);
+    const parentDiv = event.target.parentNode;
+    const cardName = parentDiv.querySelector('.card-title').innerText;
+    console.log(cardName);
+  
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ cardName }),
+    };
+    const response = await fetch('/basketadd', options);
+
   }
 });

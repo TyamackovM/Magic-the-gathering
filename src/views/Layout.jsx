@@ -12,7 +12,7 @@ module.exports = function Layout({
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossOrigin="anonymous" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/personalArea.css" />
-        <title>Document</title>
+        <title>Magic</title>
       </head>
       <header>
         <nav className="navbar navbar-expand-lg bg-light">

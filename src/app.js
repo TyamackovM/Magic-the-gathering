@@ -17,6 +17,7 @@ const loginRouter = require('./routes/login');
 const mainTwoRouter = require('./routes/mainTwo');
 const personalAreaRouter = require('./routes/personalArea');
 const basketRouter = require('./routes/basket');
+const basketAddRouter = require('./routes/basketAdds');
 
 const { sequelize } = require('../db/models');
 
@@ -47,6 +48,7 @@ app.use('/login', loginRouter);
 app.use('/maintwo', mainTwoRouter);
 app.use('/personalarea', personalAreaRouter);
 app.use('/basket', basketRouter);
+app.use('/basketadd', basketAddRouter);
 
 app.get('/logout', (req, res) => {
   if (req.session.newUser) {

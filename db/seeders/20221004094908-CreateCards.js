@@ -15,6 +15,7 @@ module.exports = {
       price: 100,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/catalog/cards/ala/ru/206-245x341.jpg',
+      condition: 'SP',
       createdAt: new Date(),
       updatedAt: new Date(),
     }, {
@@ -22,6 +23,7 @@ module.exports = {
       price: 150,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/catalog/cards/ala/ru/155-245x341.jpg',
+      condition: 'SP',
       createdAt: new Date(),
       updatedAt: new Date(),
     }, {
@@ -29,6 +31,7 @@ module.exports = {
       price: 200,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/catalog/cards/ala/ru/89-245x341.jpg',
+      condition: 'SP',
       createdAt: new Date(),
       updatedAt: new Date(),
     }, {
@@ -36,6 +39,7 @@ module.exports = {
       price: 130,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/catalog/cards/ala/ru/221-245x341.jpg',
+      condition: 'MP',
       createdAt: new Date(),
       updatedAt: new Date(),
     }], {});

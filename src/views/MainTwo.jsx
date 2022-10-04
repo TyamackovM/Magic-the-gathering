@@ -4,13 +4,23 @@ const Layout = require('./Layout');
 module.exports = function MainTwo({ cards, newUser }) {
   return (
     <Layout newUser={newUser}>
+      <script defer src="/js/basketAdd.js" />
       <div className="cardsContainer">
         {cards?.map((card) => (
           <div key={card.id} className="card" style={{ width: '11rem' }}>
             <div className="card-body">
-              <img className = 'card-img' src = {card.image}/>
-              <h3 className="card-title">{card.name}</h3>
-              <h4 className="card-price">{card.price}</h4>
+              <img className="card-img" src={card.image} />
+              <p className="card-title">{card.name}</p>
+              <p className="card-condition">
+                Состояние:
+                {' '}
+                {card.condition}
+              </p>
+              <p className="card-price">
+                {card.price}
+                ₽
+              </p>
+              <button type="button" className="btn btn-outline-info">В корзину</button>
             </div>
           </div>
         ))}

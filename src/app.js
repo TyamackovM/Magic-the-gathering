@@ -16,6 +16,7 @@ const regRouter = require('./routes/registr');
 const loginRouter = require('./routes/login');
 const mainTwoRouter = require('./routes/mainTwo');
 const personalAreaRouter = require('./routes/personalArea');
+const basketRouter = require('./routes/basket');
 
 const { sequelize } = require('../db/models');
 
@@ -45,6 +46,7 @@ app.use('/registr', regRouter);
 app.use('/login', loginRouter);
 app.use('/maintwo', mainTwoRouter);
 app.use('/personalarea', personalAreaRouter);
+app.use('/basket', basketRouter);
 
 app.get('/logout', (req, res) => {
   if (req.session.newUser) {

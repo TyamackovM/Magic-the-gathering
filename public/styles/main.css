@@ -1,5 +1,86 @@
-.cardsContainer {
+.navDiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
+
+.magicLogo, .basketLogo {
+  width: 3vw;
+  margin-left: 10px;
+}
+
+.nav-link {
+  font-size: 25px;
+}
+
+.headMagic {
+  margin: 0;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  height: 100vh;
+  background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
+}
+
+.card {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 406px;
+}
+
+.regForm {
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.logForm {
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) 
+}
+
+.zareg, .zalog {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btnReg {
+  margin: 0 auto;
+  display: block;
+  margin-top: 10px;
+  width: 11vw;
+  font-size: 20px;
+}
+
+.inpLoginReg {
+  width: 25vw;
+  margin: 5px;
+}
+
+.blockCity {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 5vh;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.exampleInp {
+  margin-left: 5px;
+}
+

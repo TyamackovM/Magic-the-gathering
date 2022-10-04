@@ -5,11 +5,6 @@ const { Card } = require('../../db/models');
 
 const MainTwo = require('../views/MainTwo');
 
-// router.get('/', (req, res) => {
-//   const { newUser } = req.session;
-//   renderTemplate(MainTwo, { newUser } || null, res);
-// });
-
 router.get('/', async (req, res) => {
   try {
     const { newUser } = req.session;

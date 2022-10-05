@@ -1,14 +1,17 @@
 body {
   background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
+  /* line-height: 20px; */
 }
-.card-body {
-  /* background: rgba(205, 214, 219, 0.5); */
-  opacity: 0.5;
-}
+
 .navDiv {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.boxCard, .basketBody {
+  min-height: 150px;
+
 }
 
 /* header{
@@ -36,18 +39,21 @@ body {
 
 .cardsContainer, .basketContainer {
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
   flex-wrap: wrap;
   padding: 15px 20px;
+  margin: auto;
+  width: 80vw;
 }
-
-.ca
 
 .card {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 406px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  /* background: rgba(255, 255, 255, 0.2); */
+  --bs-card-border-width: 0px;
 }
 
 .regForm {
@@ -82,6 +88,13 @@ body {
   width: 11vw;
   font-size: 20px;
 }
+
+/* .btnDelete {
+  width: 11vw;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+} */
 
 .inpLoginReg {
   width: 25vw;
@@ -129,4 +142,28 @@ body {
 #logout {
   user-select: none;
   cursor: pointer;
+}
+
+.card-img {
+  width: 142px;
+  height: 200.42px;
+}
+/* .cardOption {
+
+} */
+.priceAbout, .card-condition, .card-price, .rubAbout {
+  display: inline-block;
+}
+
+.priceAbout, .card-price {
+  padding-right: 5px;
+}
+
+.btnDelete {
+  width: 100%;
+  display: block;
+}
+
+.btnBucket {
+  width: 100%;
 }

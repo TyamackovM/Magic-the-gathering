@@ -13,7 +13,7 @@ module.exports = function PersonalArea({
       <div className="cardsContainer">
         {userCards.map((card) => (
           <div key={card.id} className="card" style={{ width: '11rem' }}>
-            <div className="card-body">
+            <div className="card-body cardOption">
               <img className="card-img" src={card.image} />
               <p className="card-title">{card.name}</p>
               <p className="card-condition">
@@ -35,18 +35,18 @@ module.exports = function PersonalArea({
             {/* Form */}
             <form className="additem-form" action="/personalarea" method="post">
               <div className="form-group">
-                <input type="text" name="title" className="form-control" placeholder="Title Card" required />
+                <input type="text" name="title" className="form-control" placeholder="Название карты" required />
               </div>
               <div className="form-row">
                 <div className="col">
-                  <input type="number" name="price" className="form-control" placeholder="price" required />
+                  <input type="number" name="price" className="form-control" placeholder="0" required />
                 </div>
               </div>
               <div className="form-group">
-                <input type="text" name="link" className="form-control" placeholder="link to photo" required />
+                <input type="text" name="link" className="form-control" placeholder="https://spellmarket.ru/image/cache/catalog/cards/exp/en/20-245x341.jpg" required />
               </div>
               <div className="form-group">
-                <input type="text" name="condition" className="form-control" placeholder="condition" required />
+                <input type="text" name="condition" className="form-control" placeholder="Состояние" required />
               </div>
               <div className="text-center mt-3">
                 <button type="submit" className="btn btn-secondary">add Card</button>

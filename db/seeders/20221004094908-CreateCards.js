@@ -83,14 +83,6 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date(),
     }, {
-      name: 'РАФИК МНОГОМЕДАЛЬНЫЙ',
-      price: 100,
-      user_id: 1,
-      image: 'https://spellmarket.ru/image/cache/catalog/cards/ala/ru/185-245x341.jpg',
-      condition: 'SP',
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    }, {
       name: 'ПОЦЕЛУЙ АМЕШИ',
       price: 210,
       user_id: 1,

@@ -8,8 +8,9 @@ module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
       <div className="cardsContainer">
         {cards?.map((card) => (
           <div key={card.id} className="card" style={{ width: '11rem' }}>
-            <div className="card-body">
+            <div className="card-body cardWrapper">
               <img className="card-img" src={card.image} />
+              <div className="boxCard">
               <p className="card-title">{card.name}</p>
               <p className="noneId">{card.id}</p>
               <p className="card-condition">
@@ -21,7 +22,8 @@ module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
                 {card.price}
                 ₽
               </p>
-              <button type="button" className="btn btn-outline-info">В корзину</button>
+              </div>
+              <button type="button" className="btn btn-outline-info btnBucket">В корзину</button>
             </div>
           </div>
         ))}

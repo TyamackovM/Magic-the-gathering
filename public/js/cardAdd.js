@@ -4,7 +4,7 @@ const roundTwo = document.querySelector('.round');
 basketContainer?.addEventListener('click', async (event) => {
   event.preventDefault();
   if (event.target.tagName === 'BUTTON') {
-    const parentDiv = event.target.parentNode;
+    const parentDiv = event.target.parentNode.parentNode;
     const cardName = parentDiv.querySelector('.card-title').innerText;
     const cardPrice = parentDiv.querySelector('.card-price').innerText;
     const cardImage = parentDiv.querySelector('.card-img').src;
@@ -27,7 +27,7 @@ basketContainer?.addEventListener('click', async (event) => {
 
     const result = await response.json();
     if (result.destroy === 'OK!') {
-      basketContainer.removeChild(event.target.parentNode.parentNode);
+      basketContainer.removeChild(event.target.parentNode.parentNode.parentNode);
       const countMin = localStorage.getItem('count') - 1;
       // console.log(countMin)
       localStorage.setItem('count', `${countMin}`);

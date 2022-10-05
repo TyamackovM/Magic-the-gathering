@@ -61,7 +61,6 @@ app.get('/logout', (req, res) => {
   } else {
     res.sendStatus(400);
   }
-  console.log(12313213);
 });
 
 app.listen(PORT, async () => {

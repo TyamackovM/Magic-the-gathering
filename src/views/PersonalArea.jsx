@@ -28,12 +28,12 @@ module.exports = function PersonalArea({
             </div>
           </div>
         ))}
-      
+      </div>
       <div className="container h-100 addCardPersonalArea">
         <div className="row h-100 justify-content-center align-items-center">
           <div className="col-10 col-md-8 col-lg-6">
             {/* Form */}
-            <form className="additem-form" action="" method="post">
+            <form className="additem-form" action="/personalarea" method="post">
               <div className="form-group">
                 <input type="text" name="title" className="form-control" placeholder="Title Card" required />
               </div>
@@ -53,7 +53,7 @@ module.exports = function PersonalArea({
               </div>
             </form>
             {/* Form end */}
-          </div>
+          
         </div>
       </div>
       </div>

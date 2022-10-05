@@ -1,4 +1,5 @@
 const basketContainer = document.querySelector('.basketContainer');
+const roundTwo = document.querySelector('.round');
 
 basketContainer?.addEventListener('click', async (event) => {
   event.preventDefault();
@@ -30,6 +31,7 @@ basketContainer?.addEventListener('click', async (event) => {
       const countMin = localStorage.getItem('count') - 1;
       // console.log(countMin)
       localStorage.setItem('count', `${countMin}`);
+      roundTwo.innerText = countMin;
     }
   }
 });

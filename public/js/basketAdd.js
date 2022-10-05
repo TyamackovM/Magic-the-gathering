@@ -3,7 +3,7 @@ const basketWraper = document.querySelector('.basketWraper');
 const round = document.querySelector('.round');
 round.innerText = localStorage.getItem('count');
 
-cardsContainer.addEventListener('click', async (event) => {
+cardsContainer?.addEventListener('click', async (event) => {
   event.preventDefault();
   if (event.target.tagName === 'BUTTON') {
     const parentDiv = event.target.parentNode;
@@ -25,7 +25,6 @@ cardsContainer.addEventListener('click', async (event) => {
       // const zero = parentBasket.querySelector('.round');
       round.innerText = +round.innerText + 1;
       localStorage.setItem('count', `${round.innerText}`);
-      // roundResult.appendChild()
     }
   }
 });

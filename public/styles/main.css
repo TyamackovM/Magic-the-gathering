@@ -1,12 +1,21 @@
 body {
   background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
 }
-
+.card-body {
+  /* background: rgba(205, 214, 219, 0.5); */
+  opacity: 0.5;
+}
 .navDiv {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* header{
+  position: fixed;
+  width: 100vw;
+  z-index: 1;
+} */
 
 .magicLogo, .basketLogo {
   width: 3vw;
@@ -27,12 +36,12 @@ body {
 
 .cardsContainer, .basketContainer {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   padding: 15px 20px;
-  height: 60vh;
-  
 }
+
+.ca
 
 .card {
   flex-direction: column;
@@ -115,4 +124,9 @@ body {
 .addCardPersonalArea {
   display: block;
   flex-direction: column;
+}
+
+#logout {
+  user-select: none;
+  cursor: pointer;
 }

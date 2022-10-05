@@ -13,6 +13,7 @@ module.exports = function Layout({
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/personalArea.css" />
         <script defer src="/js/basketAdd.js" />
+        <script defer src="/js/logout.js" />
         <title>Magic</title>
       </head>
       <header>
@@ -38,7 +39,7 @@ module.exports = function Layout({
                   <li className="nav-item">
                     <a className="nav-link" href="/personalarea">Что-нибудь</a>
                     <li className="nav-item">
-                      <a className="nav-link" href="/logout">Выйти</a>
+                      <a id="logout" className="nav-link">Выйти</a>
                     </li>
                   </li>
                 </ul>

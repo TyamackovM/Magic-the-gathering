@@ -56,11 +56,12 @@ app.get('/logout', (req, res) => {
   if (req.session.newUser) {
     req.session.destroy(() => {
       res.clearCookie('magicTheGathering');
-      res.redirect('/');
+      res.sendStatus(200);
     });
   } else {
-    res.redirect('/login');
+    res.sendStatus(400);
   }
+  console.log(12313213);
 });
 
 app.listen(PORT, async () => {

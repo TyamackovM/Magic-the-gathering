@@ -1,16 +1,17 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function MainTwo({ cards, newUser }) {
+module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
   return (
     <Layout newUser={newUser}>
-      <script defer src="/js/basketAdd.js" />
+      {/* <script defer src="/js/basketAdd.js" /> */}
       <div className="cardsContainer">
         {cards?.map((card) => (
           <div key={card.id} className="card" style={{ width: '11rem' }}>
             <div className="card-body">
               <img className="card-img" src={card.image} />
               <p className="card-title">{card.name}</p>
+              <p className="noneId">{card.id}</p>
               <p className="card-condition">
                 Состояние:
                 {' '}

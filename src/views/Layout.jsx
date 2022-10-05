@@ -12,6 +12,7 @@ module.exports = function Layout({
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossOrigin="anonymous" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/personalArea.css" />
+        <script defer src="/js/basketAdd.js" />
         <title>Magic</title>
       </head>
       <header>
@@ -36,9 +37,9 @@ module.exports = function Layout({
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/personalarea">Что-нибудь</a>
-                  <li className="nav-item">
-                    <a className="nav-link" href="/logout">Выйти</a>
-                  </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="/logout">Выйти</a>
+                    </li>
                   </li>
                 </ul>
               </div>
@@ -64,7 +65,10 @@ module.exports = function Layout({
                   </ul>
                 </div>
               )}
-              <a href="/basket"><img src="/pics/basket.png" alt="basket" className="basketLogo"/></a>
+            <div className="basketWraper">
+              <a href="/basket"><div className="round">0</div></a>
+              <a href="/basket"><img src="/pics/basket.png" alt="basket" className="basketLogo" /></a>
+            </div>
             {/* <a className="nav-link" href="/">KKKKK</a> */}
           </div>
         </nav>

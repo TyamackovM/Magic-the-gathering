@@ -10,4 +10,16 @@ router.get('/', checkAuth, async (req, res) => {
   renderTemplate(personalArea, { newUser, newUserCity, newUserID, userCards } || null, res);
 });
 
+router.post('/', async (req, res) => {
+  console.log('=====', req.body);
+  const { newUserID } = req.session;
+  const { title, price, link, condition } = req.body;
+  try {
+    await Card.create({ name: title, user_id: newUserID, price: price, image: link, condition: condition });
+    res.redirect('/personalarea');
+  } catch (error) {
+    res.send('Ошибка добавления карты в личный кабинет!====> ', error);
+  }
+});
+
 module.exports = router;

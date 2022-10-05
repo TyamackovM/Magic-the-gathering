@@ -10,19 +10,18 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       user_id: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Users',
+          key: 'id',
+        },
       },
       card_id: {
-        type: Sequelize.INTEGER
-      },
-      card_name: {
-        type: Sequelize.STRING
-      },
-      card_price: {
-        type: Sequelize.INTEGER
-      },
-      card_image: {
-        type: Sequelize.STRING
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Cards',
+          key: 'id',
+        },
       },
       createdAt: {
         allowNull: false,

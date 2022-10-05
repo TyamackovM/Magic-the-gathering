@@ -4,6 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Login() {
   return (
     <Layout>
+      <div className='login-wrapper'>
       <h2 className="zalog">Войдите на сайт</h2>
       <hr />
       <form action="/login" method="POST" id="loginForm" className="logForm">
@@ -13,6 +14,7 @@ module.exports = function Login() {
         <input name="password" type="text" className="form-control inpLoginReg" id="exampleInput2" />
         <button type="submit" className="btn btn-primary btnReg">Отправить</button>
       </form>
+      </div>
     </Layout>
   );
 };

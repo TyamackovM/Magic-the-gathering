@@ -37,7 +37,7 @@ body {
   background-image: url('')
 }
 
-.cardsContainer, .basketContainer {
+.cardsContainer, .basketContainer, .personalContainer, .marketContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -137,6 +137,10 @@ body {
 .addCardPersonalArea {
   display: block;
   flex-direction: column;
+  /* border: 2px solid green; */
+}
+.additem-form{
+  /* border: 2px solid green; */
 }
 
 #logout {
@@ -164,6 +168,12 @@ body {
   display: block;
 }
 
-.btnBucket {
+.btnBucket, .btnSell {
   width: 100%;
+}
+
+.main-page-header {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 35px;
 }

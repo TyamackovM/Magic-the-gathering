@@ -6,11 +6,12 @@ module.exports = function PersonalArea({
 }) {
   return (
     <Layout newUser={newUser}>
+      <script defer src="/js/orderSell.js" />
       <div className="userInfo">
         <h3>{ `${newUser}` }</h3>
         <h3>{`${newUserCity}`}</h3>
       </div>
-      <div className="cardsContainer">
+      <div className="personalContainer">
         {userCards.map((card) => (
           <div key={card.id} className="card" style={{ width: '11rem' }}>
             <div className="card-body cardOption">
@@ -25,13 +26,16 @@ module.exports = function PersonalArea({
                 {card.price}
                 ₽
               </p>
+              <p className="noneId">{card.id}</p>
+              <p className="noneUserId">{card.user_id}</p>
+              <button type="button" className="btn btn-outline-info btnSell">Продать</button>
             </div>
           </div>
         ))}
       </div>
       <div className="container h-100 addCardPersonalArea">
         <div className="row h-100 justify-content-center align-items-center">
-          <div className="col-10 col-md-8 col-lg-6">
+          <div className="col-10 col-md-8 col-lg-6 addCard">
             {/* Form */}
             <form className="additem-form" action="/personalarea" method="post">
               <div className="form-group">
@@ -53,9 +57,8 @@ module.exports = function PersonalArea({
               </div>
             </form>
             {/* Form end */}
-          
+          </div>
         </div>
-      </div>
       </div>
     </Layout>
   );

@@ -34,13 +34,16 @@ module.exports = function Layout({
                     <a className="nav-link" href="/personalarea">Личный кабинет</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/maintwo">МэинТу</a>
+                    <a className="nav-link" href="/market">Торговая площадка (Карты юзеров)</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/personalarea">Что-нибудь</a>
-                    <li className="nav-item">
-                      <a id="logout" className="nav-link">Выйти</a>
-                    </li>
+                    <a className="nav-link" href="/marketplace">Торговая площадка (Карты админа)</a>
+                  </li>
+                  {/* <li className="nav-item">
+                    <a className="nav-link" href="/personalarea">Что-нибудь</a> */}
+                  {/* </li> */}
+                  <li className="nav-item">
+                    <a id="logout" className="nav-link">Выйти</a>
                   </li>
                 </ul>
               </div>
@@ -58,11 +61,11 @@ module.exports = function Layout({
                       <a className="nav-link" href="/registr">Регистрация</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/maintwo">МэинТу</a>
+                      <a className="nav-link" href="/marketplace">Торговая площадка</a>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <a className="nav-link" href="/personalarea">Персонал</a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               )}

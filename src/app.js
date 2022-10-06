@@ -19,6 +19,8 @@ const personalAreaRouter = require('./routes/personalArea');
 const basketRouter = require('./routes/basket');
 const basketAddRouter = require('./routes/basketAdds');
 const cardAddRouter = require('./routes/cardAdds');
+const marketRouter = require('./routes/market');
+const orderSellRouter = require('./routes/orderSells');
 
 const { sequelize } = require('../db/models');
 
@@ -46,11 +48,13 @@ app.use(session(sessionConfig));
 app.use('/', mainRouter);
 app.use('/registr', regRouter);
 app.use('/login', loginRouter);
-app.use('/maintwo', mainTwoRouter);
+app.use('/marketplace', mainTwoRouter);
 app.use('/personalarea', personalAreaRouter);
 app.use('/basket', basketRouter);
 app.use('/basketadd', basketAddRouter);
 app.use('/cardadd', cardAddRouter);
+app.use('/market', marketRouter);
+app.use('/ordersell', orderSellRouter);
 
 app.get('/logout', (req, res) => {
   if (req.session.newUser) {

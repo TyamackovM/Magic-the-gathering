@@ -1,8 +1,9 @@
 const router = require('express').Router();
+const { checkAuth } = require('../middlewares/checkAuth');
 
 const { Basket, Card } = require('../../db/models');
 
-router.post('/', async (req, res) => {
+router.post('/', checkAuth, async (req, res) => {
   const { cardName, cardId } = req.body;
   const { newUserID } = req.session;
   try {

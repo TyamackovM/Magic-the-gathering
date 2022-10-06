@@ -1,10 +1,9 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
+module.exports = function Market({ cards, newUser, newUserCity, newUserID }) {
   return (
     <Layout newUser={newUser}>
-      {/* <script defer src="/js/basketAdd.js" /> */}
       <div className='main-page-header'>
         <h1>Рандомный заголовок</h1>
         <div className="dropdown">
@@ -18,21 +17,21 @@ module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
           </ul>
         </div>
       </div>
-      <div className="cardsContainer">
+      <div className="marketContainer">
         {cards?.map((card) => (
           <div key={card.id} className="card" style={{ width: '11rem' }}>
             <div className="card-body cardWrapper">
-              <img className="card-img" src={card.image} />
+              <img className="card-img" src={card['Card.image']} />
               <div className="boxCard">
-              <p className="card-title">{card.name}</p>
-              <p className="noneId">{card.id}</p>
+              <p className="card-title">{card['Card.name']}</p>
+              <p className="noneId">{card['Card.id']}</p>
               <p className="card-condition">
                 Состояние:
                 {' '}
-                {card.condition}
+                {card['Card.condition']}
               </p>
               <p className="card-price">
-                {card.price}
+                {card['Card.price']}
                 ₽
               </p>
               <p className="card-city">
@@ -47,34 +46,3 @@ module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
     </Layout>
   );
 };
-
-// const React = require('react');
-// const Layout = require('./Layout');
-
-// function Tasks({ tasks }) {
-//   // console.log(tasks);
-//   return (
-//     <Layout>
-//       <div className="mainDiv">
-//         {tasks?.map((task) => (
-//           <div key={task.id} className="card" style={{ width: '11rem' }}>
-//             <div className="card-body">
-//               <h3 className="card-title">{task.title}</h3>
-//               <h4 className="card-text">{task.body}</h4>
-//             </div>
-//           </div>
-//         ))}
-//       </div>
-//     </Layout>
-//   );
-// }
-// module.exports = Tasks;
-
-// app.get('/tasks', async (req, res) => {
-//   try {
-//     const tasks = await Task.findAll({ raw: true });
-//     renderTemplate(Tasks, { tasks }, res);
-//   } catch (error) {
-//     console.log(error);
-//   }
-// });

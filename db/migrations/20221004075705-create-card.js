@@ -27,6 +27,14 @@ module.exports = {
       condition: {
         type: Sequelize.STRING,
       },
+      //!
+      // seller_city: {
+      //   type: Sequelize.STRING,
+      //   references: {
+      //     model: 'Users',
+      //     key: 'city',
+      //   },
+      // },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

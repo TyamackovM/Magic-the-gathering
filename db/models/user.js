@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ Card, Basket, Order }) {
       this.hasMany(Card, { foreignKey: 'user_id' });
+      //!
+      // this.hasMany(Card, { foreignKey: 'seller_city' });
       this.hasMany(Basket, { foreignKey: 'user_id' });
       this.hasMany(Order, { foreignKey: 'user_id' });
     }
@@ -18,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
   User.init({
     login: DataTypes.STRING,
     password: DataTypes.STRING,
-    city: DataTypes.STRING,
+    // seller_city: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'User',

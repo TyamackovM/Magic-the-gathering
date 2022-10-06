@@ -9,7 +9,7 @@ module.exports = function MainTwo({
       {/* <script defer src="/js/basketAdd.js" /> */}
       <div className="main-page-header">
         <h1>Рандомный заголовок</h1>
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Сортировка по городу
           </button>
@@ -18,7 +18,7 @@ module.exports = function MainTwo({
               <li><a className="dropdown-item" href="#">{el}</a></li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="cardsContainer">
 

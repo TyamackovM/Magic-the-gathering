@@ -4,6 +4,19 @@ body {
   background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
   /* line-height: 20px; */
   font-family: 'Comfortaa';
+  
+  /* 'https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg'
+} */
+}
+
+
+#navBackground {
+  background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
+  border-bottom: 1px solid black;
+}
+
+.navbar-nav {
+  --bs-nav-link-hover-color: rgb(103, 103, 242);
 }
 
 .navDiv {
@@ -44,7 +57,7 @@ body {
   background-image: url('')
 }
 
-.cardsContainer, .basketContainer {
+.cardsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -53,7 +66,7 @@ body {
   width: 90vw;
 }
 
-.personalContainer, .marketContainer {
+.personalContainer, .marketContainer, .basketContainer {
   display: flex;
   flex-wrap: wrap;
   padding: 15px 20px;
@@ -181,10 +194,21 @@ body {
 .btnDelete {
   width: 100%;
   display: block;
+  color: rgb(0, 255, 60);
+  --bs-btn-border-color: rgb(69, 248, 66);
+  --bs-btn-hover-bg: #40f771; 
+  --bs-btn-hover-border-color: #55f846;
 }
 
 .btnBucket, .btnSell {
   width: 100%;
+}
+
+.btnSell {
+  color: red;
+  --bs-btn-border-color: red;
+  --bs-btn-hover-bg: #f74040; 
+  --bs-btn-hover-border-color: #f84646;
 }
 
 .main-page-header {

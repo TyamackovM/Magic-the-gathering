@@ -2,7 +2,8 @@ const personalContainer = document.querySelector('.personalContainer');
 
 personalContainer?.addEventListener('click', async (event) => {
   event.preventDefault();
-  if (event.target.tagName === 'BUTTON') {
+  if (event.target.tagName === 'BUTTON' && event.target.innerHTML === 'Продать') {
+    // personalContainer.removeChild(event.target.parentNode);
     const parentDiv = event.target.parentNode.parentNode;
     const id = parentDiv.querySelector('.noneId').innerText;
     const user_id = parentDiv.querySelector('.noneUserId').innerText;
@@ -19,6 +20,8 @@ personalContainer?.addEventListener('click', async (event) => {
     const result = await response.json();
     if (result.destroy === 'OK!') {
       personalContainer.removeChild(event.target.parentNode.parentNode);
+      // console.log(personalContainer.event.target.parentNode.parentNode);
+      // console.log(event.target.parentNode.parentNode.parentNode);
     }
   }
 });

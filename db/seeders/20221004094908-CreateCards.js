@@ -148,7 +148,7 @@ module.exports = {
       updatedAt: new Date(),
     }, {
       name: 'ВОЙСКО ТАЛАРЫ',
-      price: 90,
+      price: 190,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/catalog/cards/eve/ru/77-245x341.jpg',
       condition: 'SP',
@@ -244,7 +244,7 @@ module.exports = {
       updatedAt: new Date(),
     }, {
       name: 'ПРОНЗАЮЩАЯ ИГЛА',
-      price: 71,
+      price: 710,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/image/images/2x2/pithing-needle-245x341.jpg',
       condition: 'NM',
@@ -252,7 +252,7 @@ module.exports = {
       updatedAt: new Date(),
     }, {
       name: 'ЛЮДЕВИК, НЕКРОГЕНИЙ',
-      price: 80,
+      price: 800,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/image/images/mid-ru/file_280-245x341.jpg',
       condition: 'SP',
@@ -284,7 +284,7 @@ module.exports = {
       updatedAt: new Date(),
     }, {
       name: 'КРОЛИЧЬЯ БАТАРЕЯ',
-      price: 76,
+      price: 760,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/image/images/neo-en/rabbit-battery-245x341.jpg',
       condition: 'NM',
@@ -292,7 +292,7 @@ module.exports = {
       updatedAt: new Date(),
     }, {
       name: 'ПРОТОТИП ЛУННОЙ ЛОВУШКИ',
-      price: 20,
+      price: 230,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/image/images/neo-en/moonsnare-prototype-245x341.jpg',
       condition: 'SP',
@@ -300,7 +300,7 @@ module.exports = {
       updatedAt: new Date(),
     }, {
       name: 'ШЛЕМ ДРАУГА',
-      price: 15,
+      price: 150,
       user_id: 1,
       image: 'https://spellmarket.ru/image/cache/image/images/khm-ru/shlem-drauga-245x341.jpg',
       condition: 'SP',

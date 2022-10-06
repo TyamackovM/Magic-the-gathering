@@ -12,7 +12,7 @@ module.exports = function Layout({
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossOrigin="anonymous" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="styles/personalArea.css" />
         <link rel="stylesheet" href="/styles/itc-slider.css" />
@@ -39,10 +39,10 @@ module.exports = function Layout({
                     <a className="nav-link" href="/personalarea">Личный кабинет</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/market">Торговая площадка (юзеры)</a>
+                    <a className="nav-link" href="/market">Торговая площадка</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/marketplace">Каталог карт (админ)</a>
+                    <a className="nav-link" href="/marketplace">Каталог карт</a>
                   </li>
                   {/* <li className="nav-item">
                     <a className="nav-link" href="/personalarea">Что-нибудь</a> */}
@@ -78,7 +78,6 @@ module.exports = function Layout({
               <a href="/basket"><div className="round">0</div></a>
               <a href="/basket"><img src="/pics/basket.png" alt="basket" className="basketLogo" /></a>
             </div>
-            {/* <a className="nav-link" href="/">KKKKK</a> */}
           </div>
         </nav>
       </header>

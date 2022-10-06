@@ -18,11 +18,13 @@ cardsContainer?.addEventListener('click', async (event) => {
       body: JSON.stringify({ cardName, cardId }),
     };
     const response = await fetch('/basketadd', options);
+    console.log(response);
+    
 
-    alert('Вы добавили карту в корзину');
-
+    
     const result = await response.json();
     if (result.create = 'OK!') {
+      alert('Вы добавили карту в корзину');
       // const parentBasket = event.target.parentNode;
       // const zero = parentBasket.querySelector('.round');
       round.innerText = +round.innerText + 1;

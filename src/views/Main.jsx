@@ -5,7 +5,7 @@ module.exports = function Main({ newUser, newUserID, newUserCity }) {
   return (
     <Layout newUser={newUser}>
       <h1>
-        Hello user!
+        Hello
         {' '}
         { newUser }
       </h1>

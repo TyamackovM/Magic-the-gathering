@@ -17,6 +17,10 @@ body {
 
 }
 
+.boxPers {
+  min-height: 160px;
+}
+
 /* header{
   position: fixed;
   width: 100vw;
@@ -40,9 +44,17 @@ body {
   background-image: url('')
 }
 
-.cardsContainer, .basketContainer, .personalContainer, .marketContainer {
+.cardsContainer, .basketContainer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  margin: auto;
+  width: 90vw;
+}
+
+.personalContainer, .marketContainer {
+  display: flex;
   flex-wrap: wrap;
   padding: 15px 20px;
   margin: auto;
@@ -187,5 +199,6 @@ body {
 
 .userInfo {
 margin-left: 50px;
+margin-top: 20px;
 font-family: 'Rubik', sans-serif;
 }

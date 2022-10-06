@@ -91,14 +91,6 @@ module.exports = {
       createdAt: new Date(),
       updatedAt: new Date(),
     }, {
-      name: 'СЕНЕШАЛЬ ВАЛЕРОНА',
-      price: 115,
-      user_id: 1,
-      image: 'https://spellmarket.ru/image/cache/catalog/cards/ala/ru/198-245x341.jpg',
-      condition: 'SP',
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    }, {
       name: 'ПРИЗЫВНЫЙ УЛЬТИМАТУМ',
       price: 310,
       user_id: 1,

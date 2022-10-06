@@ -1,20 +1,20 @@
 const React = require('react');
 const Layout = require('./Layout');
 
-module.exports = function Market({ cards, newUser, newUserCity, newUserID }) {
+module.exports = function Market({ cards, newUser, newUserCity, newUserID, cityPerfect }) {
   return (
     <Layout newUser={newUser}>
       <script defer src="/js/marketBasket.js" />
-      <div className='main-page-header'>
+      <div className="main-page-header">
         <h1>Рандомный заголовок</h1>
         <div className="dropdown">
           <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Сортировка по городу
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a className="dropdown-item" href="#">Москва</a></li>
-            <li><a className="dropdown-item" href="#">Санкт-Петербург</a></li>
-            <li><a className="dropdown-item" href="#">Челябинск</a></li>
+          { cityPerfect?.map((el) => (
+              <li><a className="dropdown-item" href="#">{el}</a></li>
+            ))}
           </ul>
         </div>
       </div>
@@ -35,9 +35,6 @@ module.exports = function Market({ cards, newUser, newUserCity, newUserID }) {
               <p className="card-price">
                 {card['Card.price']}
                 ₽
-              </p>
-              <p className="card-city">
-                  Город: Тест
               </p>
               </div>
               <button type="button" className="btn btn-outline-info btnBucket">В корзину</button>

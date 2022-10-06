@@ -9,39 +9,17 @@ module.exports = function PersonalArea({
       <link rel="stylesheet" href="/styles/addCard.css" />
       <script defer src="/js/orderSell.js" />
       <div className="userInfo">
-        <h3>{ `Nickname: ${newUser}` }</h3>
-        <h3>{`City: ${newUserCity}`}</h3>
+        <h4>{ `Приветствую, ${newUser}!` }</h4>
+        <h4>{`Геолокация: ${newUserCity}`}</h4>
       </div>
 
-      <div className="personalContainer">
-        {userCards.map((card) => (
-          <div key={card.id} className="card" style={{ width: '11rem' }}>
-            <div className="card-body cardOption">
-              <img className="card-img" src={card.image} />
-              <div className="boxCard">
-                <p className="card-title">{card.name}</p>
-                <p className="card-condition">
-                  Состояние:
-                  {' '}
-                  {card.condition}
-                </p>
-                <p className="card-price">
-                  {card.price}
-                  ₽
-                </p>
-                <p className="noneId">{card.id}</p>
-                <p className="noneUserId">{card.user_id}</p>
-              </div>
-              <button type="button" className="btn btn-outline-info btnSell">Продать</button>
-            </div>
-          </div>
-        ))}
-      </div>
+
+
 
       <form className="additem-form" action="/personalarea" method="post">
         <div className="register-form-container">
           <h1 className="form-title">
-            Создать карту
+            Добавить карту
           </h1>
           <div className="form-fields">
             <div className="form-field">
@@ -62,6 +40,38 @@ module.exports = function PersonalArea({
           </div>
         </div>
       </form>
+
+
+      <div className="userInfo">
+        <h4>Моя коллекция карт</h4>
+      </div>
+
+      <div className="personalContainer">
+        {userCards.map((card) => (
+          <div key={card.id} className="card" style={{ width: '11rem' }}>
+            <div className="card-body cardOption">
+              <img className="card-img" src={card.image} />
+              <div className="boxPers">
+                <p className="card-title">{card.name}</p>
+                <p className="card-condition">
+                  Состояние:
+                  {' '}
+                  {card.condition}
+                </p>
+                <p className="card-price">
+                  {card.price}
+                  ₽
+                </p>
+                <p className="noneId">{card.id}</p>
+                <p className="noneUserId">{card.user_id}</p>
+              </div>
+              <button type="button" className="btn btn-outline-info btnSell">Продать</button>
+            </div>
+          </div>
+        ))}
+      </div>
+
+     
 
       {/* <div className="container h-100 addCardPersonalArea">
         <div className="row h-100 justify-content-center align-items-center">

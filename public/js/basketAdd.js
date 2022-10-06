@@ -5,7 +5,7 @@ round.innerText = localStorage.getItem('count');
 
 cardsContainer?.addEventListener('click', async (event) => {
   event.preventDefault();
-  if (event.target.tagName === 'BUTTON') {
+  if (event.target.tagName === 'BUTTON' && event.target.innerHTML === 'В корзину') {
     const parentDiv = event.target.parentNode;
     const cardName = parentDiv.querySelector('.card-title').innerText;
     const cardId = parentDiv.querySelector('.noneId').innerText;

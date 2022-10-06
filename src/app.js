@@ -69,6 +69,8 @@ app.get('/logout', (req, res) => {
   }
 });
 
+//! const cards = await User.findAll( { where: { city: Москва }, include Card });
+
 app.listen(PORT, async () => {
   try {
     await sequelize.authenticate();

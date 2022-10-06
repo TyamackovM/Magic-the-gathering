@@ -2,6 +2,7 @@ const React = require('react');
 const Layout = require('./Layout');
 
 module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
+  const citys = ['Москва', 2, 3, 4, 5];
   return (
     <Layout newUser={newUser}>
       {/* <script defer src="/js/basketAdd.js" /> */}
@@ -12,14 +13,26 @@ module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
             Сортировка по городу
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a className="dropdown-item" href="#">Москва</a></li>
-            <li><a className="dropdown-item" href="#">Санкт-Петербург</a></li>
-            <li><a className="dropdown-item" href="#">Челябинск</a></li>
+            { citys.map((el) => (
+              <li><a className="dropdown-item" href="#">{el}</a></li>
+            ))}
+            {/* <li><a className="dropdown-item" href="#">Санкт-Петербург</a></li>
+             <li><a className="dropdown-item" href="#">Челябинск</a></li> */}
           </ul>
         </div>
       </div>
       <div className="cardsContainer">
-        {cards?.map((card) => (
+
+
+      <div class="container">
+
+<div class="slider" data-slider="itc-slider" data-loop="false">
+  <div class="slider__wrapper">
+    <div class="slider__items">
+        
+        
+      {cards?.map((card) => (
+      <div class="slider__item">
           <div key={card.id} className="card" style={{ width: '11rem' }}>
             <div className="card-body cardWrapper">
               <img className="card-img" src={card.image} />
@@ -42,8 +55,21 @@ module.exports = function MainTwo({ cards, newUser, newUserCity, newUserID }) {
               <button type="button" className="btn btn-outline-info btnBucket">В корзину</button>
             </div>
           </div>
-        ))}
       </div>
+        ))}
+
+
+    </div>
+  </div>
+  <button class="slider__control" data-slide="prev"></button>
+  <button class="slider__control" data-slide="next"></button>
+</div>
+
+</div>
+
+        
+      </div>
+
     </Layout>
   );
 };

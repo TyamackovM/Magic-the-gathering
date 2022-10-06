@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
+
 body {
   background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
   /* line-height: 20px; */
+  font-family: 'Comfortaa';
 }
 
 .navDiv {
@@ -43,7 +46,7 @@ body {
   flex-wrap: wrap;
   padding: 15px 20px;
   margin: auto;
-  width: 80vw;
+  width: 90vw;
 }
 
 .card {

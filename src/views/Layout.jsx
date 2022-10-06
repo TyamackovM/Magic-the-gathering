@@ -12,8 +12,14 @@ module.exports = function Layout({
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossOrigin="anonymous" />
         <link rel="stylesheet" href="styles/main.css" />
         <link rel="stylesheet" href="styles/personalArea.css" />
+        <link rel="stylesheet" href="/styles/itc-slider.css" />
+        <script src="/js/itc-slider.js" defer />
         <script defer src="/js/basketAdd.js" />
         <script defer src="/js/logout.js" />
+
+        {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap" rel="stylesheet" /> */}
         <title>Magic</title>
       </head>
       <header>

@@ -16,18 +16,20 @@ module.exports = function PersonalArea({
           <div key={card.id} className="card" style={{ width: '11rem' }}>
             <div className="card-body cardOption">
               <img className="card-img" src={card.image} />
-              <p className="card-title">{card.name}</p>
-              <p className="card-condition">
-                Состояние:
-                {' '}
-                {card.condition}
-              </p>
-              <p className="card-price">
-                {card.price}
-                ₽
-              </p>
-              <p className="noneId">{card.id}</p>
-              <p className="noneUserId">{card.user_id}</p>
+              <div className="boxCard">
+                <p className="card-title">{card.name}</p>
+                <p className="card-condition">
+                  Состояние:
+                  {' '}
+                  {card.condition}
+                </p>
+                <p className="card-price">
+                  {card.price}
+                  ₽
+                </p>
+                <p className="noneId">{card.id}</p>
+                <p className="noneUserId">{card.user_id}</p>
+              </div>
               <button type="button" className="btn btn-outline-info btnSell">Продать</button>
             </div>
           </div>

@@ -13,7 +13,7 @@ module.exports = function BasketMain({
             <div key={card['Card.id']} className="card" style={{ width: '11rem' }}>
               <div className="card-body">
                 <img className="card-img" src={card['Card.image']} />
-                <div className="basketBody">
+                <div className="boxCard">
                   <div className="card-title">{card['Card.name']}</div>
                   <div className="priceAbout">Состояние:</div>
                   <div className="card-condition">

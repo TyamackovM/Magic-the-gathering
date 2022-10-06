@@ -19,6 +19,8 @@ cardsContainer?.addEventListener('click', async (event) => {
     };
     const response = await fetch('/basketadd', options);
 
+    alert('Вы добавили карту в корзину');
+
     const result = await response.json();
     if (result.create = 'OK!') {
       // const parentBasket = event.target.parentNode;

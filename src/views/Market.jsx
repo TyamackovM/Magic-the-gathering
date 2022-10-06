@@ -4,6 +4,7 @@ const Layout = require('./Layout');
 module.exports = function Market({ cards, newUser, newUserCity, newUserID }) {
   return (
     <Layout newUser={newUser}>
+      <script defer src="/js/marketBasket.js" />
       <div className='main-page-header'>
         <h1>Рандомный заголовок</h1>
         <div className="dropdown">
@@ -25,6 +26,7 @@ module.exports = function Market({ cards, newUser, newUserCity, newUserID }) {
               <div className="boxCard">
               <p className="card-title">{card['Card.name']}</p>
               <p className="noneId">{card['Card.id']}</p>
+              <p className="noneIds">{card.id}</p>
               <p className="card-condition">
                 Состояние:
                 {' '}

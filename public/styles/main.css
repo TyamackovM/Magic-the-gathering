@@ -9,8 +9,8 @@ body {
   flex-wrap: wrap;
 }
 
-.boxCard, .basketBody {
-  min-height: 150px;
+.boxCard, .basketBody .boxPersonal {
+  min-height: 190px;
 
 }
 
@@ -114,7 +114,7 @@ body {
   margin-left: 5px;
 }
 
-.noneId {
+.noneId, .noneUserId, .noneIds {
   display: none;
 }
 

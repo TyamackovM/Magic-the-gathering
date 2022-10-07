@@ -21,10 +21,10 @@ cardsContainer?.addEventListener('click', async (event) => {
     console.log(response);
     
 
-    
+
     const result = await response.json();
     if (result.create = 'OK!') {
-      alert('Вы добавили карту в корзину');
+      // alert('Вы добавили карту в корзину');
       // const parentBasket = event.target.parentNode;
       // const zero = parentBasket.querySelector('.round');
       round.innerText = +round.innerText + 1;

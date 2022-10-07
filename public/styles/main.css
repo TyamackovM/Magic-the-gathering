@@ -3,7 +3,6 @@
 body {
   background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
   /* line-height: 20px; */
-  font-family: 'Comfortaa';
 }
 
 .navDiv {
@@ -41,32 +40,36 @@ body {
 }
 
 .login-wrapper {
-  background-image: url('')
+  background-image: url('');
+  font-family: 'Rubik', sans-serif;
 }
 
-.cardsContainer, .basketContainer {
+.cardsContainer, .basketContainer, .personalContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 15px 20px;
   margin: auto;
   width: 90vw;
+  font-family: 'Rubik', sans-serif;
 }
 
-.personalContainer, .marketContainer {
+.marketContainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 15px 20px;
+  padding: 8px 20px;
   margin: auto;
   width: 90vw;
+  font-family: 'Rubik', sans-serif;
 }
 
 .card {
+  max-width: 200px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 5px;
+  margin-right: 8px;
   /* background: rgba(255, 255, 255, 0.2); */
   --bs-card-border-width: 0px;
 }
@@ -78,7 +81,8 @@ body {
   top: 50%;
   left: 50%;
   margin-right: -50%;
-  transform: translate(-50%, -50%) 
+  transform: translate(-50%, -50%);
+  font-family: 'Rubik', sans-serif;
 }
 
 .logForm {
@@ -94,6 +98,7 @@ body {
 .zareg, .zalog {
   text-align: center;
   margin-top: 100px;
+  font-family: 'Rubik', sans-serif;
 }
 
 .btnReg {
@@ -102,6 +107,7 @@ body {
   margin-top: 10px;
   width: 11vw;
   font-size: 20px;
+  font-family: 'Rubik', sans-serif;;
 }
 
 /* .btnDelete {
@@ -155,7 +161,7 @@ body {
   /* border: 2px solid green; */
 }
 .additem-form{
-  /* border: 2px solid green; */
+  font-family: 'Rubik', sans-serif;
 }
 
 #logout {
@@ -181,6 +187,10 @@ body {
 .btnDelete {
   width: 100%;
   display: block;
+  color: rgb(0, 255, 60);
+  --bs-btn-border-color: rgb(69, 248, 66);
+  --bs-btn-hover-bg: #40f771; 
+  --bs-btn-hover-border-color: #55f846;
 }
 
 .btnBucket, .btnSell {
@@ -191,6 +201,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 15px 35px;
+  font-family: 'Rubik', sans-serif;
 }
 
 .addCard{
@@ -198,7 +209,74 @@ body {
 }
 
 .userInfo {
-margin-left: 50px;
-margin-top: 20px;
-font-family: 'Rubik', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  /* margin-left: 50px; */
+  margin-top: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.card-body {
+  width: 185px;
+}
+
+.cardPC {
+  display: grid;
+  border-radius: 1em;
+  width: 270px;
+  height: 455px;
+  background: white;
+  overflow: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+.cardPC::before {
+  content: "";
+  position: absolute;
+  width: 500px !important;
+  height: 55px;
+  top: 0;
+  right: 50px;
+  transition: 2s;
+  background: linear-gradient(50deg, #36fc7b, #029eff);
+  transform: rotate(-45deg) translate(0, -150px);
+}
+
+.cardPCstyles {
+  display: grid;  
+  place-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: .8em;
+  z-index: 1;
+  color:rgb(0, 0, 0);
+  overflow: hidden;
+  padding: 1em;
+  cursor: pointer;
+  transition: .6s ease;
+}
+
+.cardPCstyles:hover {
+  color:rgb(63, 63, 63);
+}
+
+.cardPC:hover::before {
+  animation: effect 2s;
+}
+
+@keyframes effect {
+  100% {
+    transform: rotate(-45deg) translate(0, 500px);
+  }
+}
+.container-fluid {
+  font-family: 'Rubik', sans-serif;
+}
+
+.btnSell {
+  color: red;
+  --bs-btn-border-color: red;
+  --bs-btn-hover-bg: #f74040; 
+  --bs-btn-hover-border-color: #f84646;
 }

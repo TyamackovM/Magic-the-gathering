@@ -21,6 +21,9 @@ module.exports = {
           key: 'id',
         },
       },
+      status: {
+        type: Sequelize.STRING,
+      },
       image: {
         type: Sequelize.STRING,
       },

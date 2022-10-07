@@ -23,7 +23,7 @@ module.exports = function Layout({
         <title>Magic</title>
       </head>
       <header>
-        <nav className="navbar navbar-expand-lg bg-light">
+        <nav id="navBackground" className="navbar navbar-expand-lg bg-light">
           <img src="/pics/magic.png" alt="magic" className="magicLogo" />
           <div className="container-fluid">
             <p className="navbar-brand headMagic">Magic The Gathering </p>

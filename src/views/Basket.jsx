@@ -7,6 +7,9 @@ module.exports = function BasketMain({
   return (
     <Layout newUser={newUser}>
       <script defer src="/js/cardAdd.js" />
+      <div className="userInfo">
+        <h4>Карты в корзине:</h4>
+      </div>
       <div className="basketContainer">
         {cards.length
           ? cards.map((card) => (
@@ -35,7 +38,7 @@ module.exports = function BasketMain({
           ))
           : (
             <h1>
-              Нет карточек
+              Нет карт в корзине
             </h1>
           )}
       </div>

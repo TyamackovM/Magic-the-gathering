@@ -5,11 +5,13 @@ module.exports = function Market({ cards, newUser, newUserCity, newUserID, cityP
   return (
     <Layout newUser={newUser}>
       <script defer src="/js/marketBasket.js" />
+
       <script defer src="/js/filterCity.js" />
+
       <div className="main-page-header">
         <h1>Карты в продаже:</h1>
         <div className="dropdown">
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          <button className="btn btn-secondary dropdown-toggle filter-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
             Сортировка по городу
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -37,6 +39,7 @@ module.exports = function Market({ cards, newUser, newUserCity, newUserID, cityP
                 {card['Card.price']}
                 ₽
               </p>
+              <p className="city">{card['Card.city']}</p>
               </div>
               <button type="button" className="btn btn-outline-info btnBucket">В корзину</button>
             </div>

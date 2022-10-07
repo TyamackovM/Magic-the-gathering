@@ -3,6 +3,7 @@
 body {
   background-image: url('https://www.roleplayturk.net/wp-content/uploads/2019/12/943276.jpg');
   /* line-height: 20px; */
+
 }
 
 .navDiv {
@@ -44,7 +45,9 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+
 .cardsContainer, .basketContainer, .personalContainer {
+
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -54,7 +57,9 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
+
 .marketContainer {
+
   display: flex;
   flex-wrap: wrap;
   padding: 8px 20px;
@@ -195,6 +200,13 @@ body {
 
 .btnBucket, .btnSell {
   width: 100%;
+}
+
+.btnSell {
+  color: red;
+  --bs-btn-border-color: red;
+  --bs-btn-hover-bg: #f74040; 
+  --bs-btn-hover-border-color: #f84646;
 }
 
 .main-page-header {

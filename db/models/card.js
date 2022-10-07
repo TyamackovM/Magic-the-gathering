@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate({ User, Basket, Order }) {
       this.belongsTo(User, { foreignKey: 'user_id' });
+      //!
+      // this.belongsTo(User, { foreignKey: 'seller_city' });
       this.hasMany(Basket, { foreignKey: 'card_id' });
       this.hasMany(Order, { foreignKey: 'card_id' });
       // this.hasMany(Order, { foreignKey: 'card_name' });
@@ -25,7 +27,9 @@ module.exports = (sequelize, DataTypes) => {
     user_id: DataTypes.INTEGER,
     status: DataTypes.STRING,
     image: DataTypes.STRING,
-    condition: DataTypes.STRING
+    condition: DataTypes.STRING,
+    //!
+    // seller_city: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Card',

@@ -8,8 +8,10 @@ module.exports = function MainTwo({
     <Layout newUser={newUser}>
       {/* <script defer src="/js/basketAdd.js" /> */}
       <div className="main-page-header">
+
         <h1>Карты в наличии на маркетплэйсе:</h1>
         
+
       </div>
       <div className="cardsContainer">
 

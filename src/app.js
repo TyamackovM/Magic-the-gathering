@@ -46,10 +46,10 @@ const sessionConfig = {
 
 app.use(session(sessionConfig));
 
-app.use('/', mainRouter);
+// app.use('/', mainRouter);
 app.use('/registr', regRouter);
 app.use('/login', loginRouter);
-app.use('/marketplace', mainTwoRouter);
+app.use('/', mainTwoRouter);
 app.use('/personalarea', personalAreaRouter);
 app.use('/basket', basketRouter);
 app.use('/basketadd', basketAddRouter);

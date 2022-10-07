@@ -11,7 +11,7 @@ module.exports = function Login() {
         <label htmlFor="exampleInput1" className="form-label exampleInp">Логин</label>
         <input name="login" type="text" className="form-control inpLoginReg" id="exampleInput1" />
         <label htmlFor="exampleInput2" className="form-label exampleInp">Пароль</label>
-        <input name="password" type="text" className="form-control inpLoginReg" id="exampleInput2" />
+        <input name="password" type="password" className="form-control inpLoginReg" id="exampleInput2" />
         <button type="submit" className="btn btn-primary btnReg">Отправить</button>
       </form>
       </div>

@@ -10,9 +10,9 @@ module.exports = function Registr() {
         <label htmlFor="exampleInput1" className="form-label exampleInp">Логин</label>
         <input name="login" type="text" className="form-control inpLoginReg" id="exampleInput1" />
         <label htmlFor="exampleInput2" className="form-label exampleInp">Пароль</label>
-        <input name="password" type="text" className="form-control inpLoginReg" id="exampleInput2" />
-        {/* <label htmlFor="exampleInput2" className="form-label">Город</label>
-        <input name="city" type="text" className="form-control" id="exampleInput2" /> */}
+        <input name="password" type="password" className="form-control inpLoginReg" id="exampleInput2" />
+        {/* <label htmlFor="exampleInput2" className="form-label">Город</label> */}
+        {/* <input name="city" type="text" className="form-control" id="exampleInput2" /> */}
         <label htmlFor="exampleInput3" className="form-label exampleInp">Город</label>
         <select name="city" className="blockCity">
           <option value="">Выберите город...</option>

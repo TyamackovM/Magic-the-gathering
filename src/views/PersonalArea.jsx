@@ -12,10 +12,6 @@ module.exports = function PersonalArea({
         <h4>{ `Приветствую, ${newUser}!` }</h4>
         <h4>{`Геолокация: ${newUserCity}`}</h4>
       </div>
-
-
-
-
       <form className="additem-form" action="/personalarea" method="post">
         <div className="register-form-container">
           <h1 className="form-title">
@@ -29,7 +25,7 @@ module.exports = function PersonalArea({
               <input type="number" name="price" className="form-control addCard" placeholder="0₽" required />
             </div>
             <div className="form-field">
-              <input type="text" placeholder="https://spellmarket.ru/image/cache/catalog/cards/exp/en/20-245x341.jpg" required />
+              <input type="text" name="link" placeholder="https://spellmarket.ru/image/cache/catalog/cards/exp/en/20-245x341.jpg" required />
             </div>
             <div className="form-group">
               <input type="text" name="condition" className="form-control addCard" placeholder="Состояние SP/NM" required />
@@ -48,8 +44,8 @@ module.exports = function PersonalArea({
 
       <div className="personalContainer">
         {userCards.map((card) => (
-          <div key={card.id} className="card" style={{ width: '11rem' }}>
-            <div className="card-body cardOption">
+          <div key={card.id} className="card cardPC" style={{ width: '12rem' }}>
+            <div className="card-body cardOption cardPCstyles">
               <img className="card-img" src={card.image} />
               <div className="boxPers">
                 <p className="card-title">{card.name}</p>
@@ -58,6 +54,7 @@ module.exports = function PersonalArea({
                   {' '}
                   {card.condition}
                 </p>
+                <br />
                 <p className="card-price">
                   {card.price}
                   ₽

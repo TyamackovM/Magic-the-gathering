@@ -19,6 +19,7 @@ module.exports = function Layout({
         <script src="/js/itc-slider.js" defer />
         <script defer src="/js/basketAdd.js" />
         <script defer src="/js/logout.js" />
+        <script defer src="/js/script.js" />
         <title>Magic</title>
       </head>
       <header>
@@ -33,16 +34,13 @@ module.exports = function Layout({
               <div className="collapse navbar-collapse navDiv" id="navbarNav">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link" href="/">Главная</a>
-                  </li>
-                  <li className="nav-item">
                     <a className="nav-link" href="/personalarea">Личный кабинет</a>
                   </li>
                   <li className="nav-item">
                     <a className="nav-link" href="/market">Торговая площадка</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="/marketplace">Каталог карт</a>
+                    <a className="nav-link" href="/">Каталог карт</a>
                   </li>
                   {/* <li className="nav-item">
                     <a className="nav-link" href="/personalarea">Что-нибудь</a> */}
@@ -66,7 +64,7 @@ module.exports = function Layout({
                       <a className="nav-link" href="/registr">Регистрация</a>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link" href="/marketplace">Каталог карт</a>
+                      <a className="nav-link" href="/">Каталог карт</a>
                     </li>
                     {/* <li className="nav-item">
                       <a className="nav-link" href="/personalarea">Персонал</a>

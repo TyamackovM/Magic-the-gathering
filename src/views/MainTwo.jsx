@@ -8,17 +8,10 @@ module.exports = function MainTwo({
     <Layout newUser={newUser}>
       {/* <script defer src="/js/basketAdd.js" /> */}
       <div className="main-page-header">
-        <h1>Рандомный заголовок</h1>
-        {/* <div className="dropdown">
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Сортировка по городу
-          </button>
-          <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            { cityPerfect?.map((el) => (
-              <li><a className="dropdown-item" href="#">{el}</a></li>
-            ))}
-          </ul>
-        </div> */}
+
+        <h1>Карты в наличии на маркетплэйсе:</h1>
+        
+
       </div>
       <div className="cardsContainer">
 
@@ -30,8 +23,8 @@ module.exports = function MainTwo({
 
                 {cards?.map((card) => (
                   <div className="slider__item">
-                    <div key={card.id} className="card" style={{ width: '11rem' }}>
-                      <div className="card-body cardWrapper">
+                    <div key={card.id} className="card cardPC" style={{ width: '12rem' }}>
+                      <div className="card-body cardWrapper cardPCstyles">
                         <img className="card-img" src={card.image} />
                         <div className="boxCard">
                           <p className="card-title">{card.name}</p>
